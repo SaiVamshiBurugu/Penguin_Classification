@@ -34,15 +34,25 @@ The following classification models were trained and evaluated:
 4.  **K-Nearest Neighbors (KNN)**
 
 ## Model Evaluation & Results
-The models were evaluated using the following metrics:
-- **Accuracy Score**
-- **Precision Score**
-- **Recall Score**
-- **F1 Score**
-- **Training and Testing Accuracy**
+The models were evaluated based on their accuracy scores. Below is a summary of the performance for each model:
 
-From the notebook analysis, the models achieved high accuracy. For specific metric values and detailed performance on the test set, please refer to the notebook's output cells.
-*(Note: You can add specific numbers here if you run the notebook or extract them from the outputs).*
+| Model | Training Accuracy | Testing Accuracy |
+| :--- | :--- | :--- |
+| **Logistic Regression** | 99.22% | 98.84% |
+| **K-Nearest Neighbors (KNN)** | 99.61% | 98.84% |
+| **Decision Tree** | 100.0% | 97.67% |
+| **Random Forest** | 100.0% | 98.84% |
+| **AdaBoost** | 97.29% | 98.84% |
+| **Gradient Boosting** | 100.0% | 97.67% |
+
+### Key Insights:
+- **High Performance:** All models performed exceptionally well, with testing accuracies ranging from 97.67% to 98.84%.
+- **Best Performers:** **Logistic Regression, KNN, Random Forest, and AdaBoost** achieved the highest testing accuracy of **98.84%**.
+- **Overfitting:** The Decision Tree, Random Forest, and Gradient Boosting models achieved 100% training accuracy, indicating potential overfitting, although they still generalized very well to the test set.
+- **Consistency:** Random Forest and KNN showed strong consistency between training and testing performance.
+
+## Conclusion
+The project successfully demonstrates the ability to classify penguin species with high precision using standard machine learning algorithms. Based on the results, **Random Forest** or **Logistic Regression** would be excellent choices for deployment due to their high accurracy and robustness.
 
 ## Files
 - `Penguin_Model.ipynb`: Jupyter notebook containing the code for data analysis, preprocessing, model training, and evaluation.
